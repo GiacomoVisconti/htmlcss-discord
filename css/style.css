@@ -30,9 +30,14 @@ a {
     color: white;
 }
 
+.button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+}
 /* utils */
 .container {
-    max-width: 1000px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .container-small {
@@ -101,8 +106,9 @@ a {
 
 /* !Header */
 header {
-    padding: 10px;
+    padding: 20px;
     background-color: #255ee9;
+
     #nav-bar {
         justify-content: space-between;
         width: 100%;
@@ -130,11 +136,8 @@ header {
         width: 25%;
     }
     #cmd-accedi {
-        padding: 10px;
         background-color: white;
         font-size: 17px 20px;
-        border-radius: 20px;
-        border: none;
     }
 }
 
@@ -148,8 +151,42 @@ main {
         background-image: url("../img/jumbo.png");
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: contain;
+        object-fit: none;
+        height: 610px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    /* Jumbo text */
+    .jumbo-text {
+        display: inline;
+        text-align: center;
+
+        color: white;
+        line-height: 1.6;
+        font-size: 18px;
+
+        .jumbo-title {
+            font-size: 3em;
+        }
+
+        .jumbo-buttons {
+            padding: 20px;
+
+            .download-button {
+                background-color: white;
+                margin-right: 20px;
+                font-size: 15px;
+            }
+            .open-browser-button {
+                font-size: 15px;
+                background-color: #23272a;
+                color: white;
+            }
+        }
+    }
+
+    /* Banners */
     .banner-box {
         padding: 20px;
         display: flex;
