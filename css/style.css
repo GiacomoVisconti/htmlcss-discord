@@ -102,13 +102,7 @@ a {
 /* !Header */
 header {
     padding: 10px;
-    background-color: #3161e0;
-
-    .header-links {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-    }
+    background-color: #255ee9;
     #nav-bar {
         justify-content: space-between;
         width: 100%;
@@ -123,11 +117,16 @@ header {
         text-align: center;
         padding: 5px;
         width: 50%;
-        line-height: 23px;
+        line-height: 25px;
+    }
+    /* Header Links  */
+    .header-links {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
     }
     #nav-bar-login {
         text-align: right;
-        padding: 5px;
         width: 25%;
     }
     #cmd-accedi {
@@ -143,10 +142,13 @@ header {
 main {
     #jumbotron {
         display: flex;
-        min-height: 200px;
+        min-height: 350px;
     }
     #jumb-container {
-        padding: 20px;
+        background-image: url("../img/jumbo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: contain;
     }
     .banner-box {
         padding: 20px;
