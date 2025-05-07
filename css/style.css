@@ -365,6 +365,9 @@ footer {
                 color: white;
             }
         }
+        #end-page-box {
+            padding-bottom: 100px;
+        }
     }
 }
 /* #endregion common */
