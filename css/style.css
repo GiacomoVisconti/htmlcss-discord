@@ -37,7 +37,7 @@ a {
 }
 /* utils */
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .container-small {
@@ -48,12 +48,19 @@ a {
     background-color: white;
 }
 .bg-lightgrey {
-    background-color: #d3d3d3;
+    background-color: #e5e5e5;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 .helper {
     * {
         border: 1px dashed black;
     }
+}
+.separator {
+    border: 1px solid lightgray;
 }
 /* #region debug */
 .debug {
@@ -78,7 +85,7 @@ a {
     .banner-text {
         background-color: var(--ly-debug-bg-banner-text);
     }
-    #download-banner {
+    #big-banner {
         background-color: var(--ly-debug-bg-download-banner);
     }
     #social-links {
@@ -104,6 +111,7 @@ a {
 
 /* #region common */
 
+/* #region Header */
 /* !Header */
 header {
     padding: 20px;
@@ -140,7 +148,9 @@ header {
         font-size: 17px 20px;
     }
 }
+/* #endregion Header */
 
+/* #region Main */
 /* !Main */
 main {
     #jumbotron {
@@ -186,46 +196,125 @@ main {
         }
     }
 
-    /* Banners */
+    /* *Banners */
     .banner-box {
-        padding: 20px;
+        padding: 40px;
         display: flex;
-        min-height: 270px;
+        min-height: 350px;
     }
     .banner {
         display: flex;
         width: 100%;
     }
     .banner-image {
-        width: 60%;
+        width: 65%;
+        display: flex;
+        justify-content: center;
     }
     .banner-text {
-        width: 40%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        color: #23272a;
+        padding: 20px;
+        justify-content: center;
+        .banner-title {
+            padding: 10px;
+            font-size: 50px;
+            justify-content: center;
+        }
+        .banner-caption {
+            font-size: 18px;
+            padding: 10px;
+            line-height: 1.5;
+        }
     }
-    #download-banner-box {
+    /* ?Wave divisor  */
+    .wave-divisor {
+        height: 200px;
+        background-image: url("../img/wave.svg");
+        opacity: 0.1;
+        background-size: 150%;
+    }
+    /* *Big Banner Box */
+    #big-banner-box {
+        min-height: 1000px;
         padding: 20px;
         display: flex;
-    }
-    #download-banner {
-        min-height: 500px;
-        width: 100%;
+        #big-banner {
+            min-height: 500px;
+            width: 100%;
+
+            .big-banner-text {
+                display: flex;
+                color: #23272a;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+
+                .big-banner-title {
+                    font-size: 50px;
+                }
+
+                .big-banner-caption {
+                    font-size: 20px;
+                    padding: 10px;
+                    line-height: 1.5;
+                }
+            }
+            .big-banner-image {
+                height: 60%;
+                display: flex;
+                justify-content: center;
+            }
+            .download-caption {
+                font-size: 30px;
+                background-image: url("../img/stars.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 50%;
+                padding: 30px;
+            }
+            #big-banner-donwload-button {
+                display: flex;
+
+                align-items: center;
+                text-align: center;
+            }
+        }
     }
 }
+/* #endregion Main */
 /* !Footer */
 footer {
+    background-color: #23272a;
     #footer-link-box {
         min-height: 400px;
         padding: 10px 0px 20px 0px;
         display: flex;
-        background-color: #23272a;
-        margin-bottom: 1px;
     }
     #footer-links {
         display: flex;
         width: 100%;
-    }
-    #social-links {
-        width: 34%;
+        #social-links {
+            width: 34%;
+            display: flex;
+            #social-links-title {
+                color: #7289da;
+                font-size: 40px;
+                padding: 20px;
+            }
+            .language-selection {
+                display: flex;
+                align-items: center;
+                color: white;
+            }
+            #language-img {
+                width: 40px;
+                padding-right: 5px;
+            }
+        }
     }
     #internal-links-box {
         display: flex;
@@ -235,7 +324,6 @@ footer {
         width: 25%;
     }
     #end-page {
-        background-color: #23272a;
         min-height: 50px;
         border: none;
         padding-top: 15px;
