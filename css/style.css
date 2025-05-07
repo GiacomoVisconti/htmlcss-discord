@@ -346,12 +346,17 @@ footer {
         min-height: 50px;
         border: none;
         padding-top: 15px;
-    }
-    #end-page-box {
-        min-height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        #end-page-box {
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            #cmd-registrati {
+                background-color: #8ea1e1;
+                color: white;
+            }
+        }
     }
 }
 /* #endregion common */
