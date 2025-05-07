@@ -91,7 +91,7 @@ a {
     #social-links {
         background-color: var(--ly-debug-gb-social-links);
     }
-    .internal-links {
+    .internal-links-list {
         border: 1px dashed white;
         background-color: var(--ly-debug-gb-internal-links);
     }
@@ -309,19 +309,38 @@ footer {
                 display: flex;
                 align-items: center;
                 color: white;
+                padding: 10px;
             }
             #language-img {
                 width: 40px;
                 padding-right: 5px;
+            }
+            .social-links-icon {
+                padding: 10px;
+                color: white;
+            }
+            .icon {
+                padding: 10px;
             }
         }
     }
     #internal-links-box {
         display: flex;
         width: 100%;
-    }
-    .internal-links {
-        width: 25%;
+        flex-direction: row;
+        .internal-links-list {
+            width: 25%;
+            .internal-links-section {
+                list-style-type: none;
+                padding: 20px;
+                line-height: 2.5;
+                font-size: 15px;
+                color: white;
+                .internal-links-section-title {
+                    color: #7289da;
+                }
+            }
+        }
     }
     #end-page {
         min-height: 50px;
