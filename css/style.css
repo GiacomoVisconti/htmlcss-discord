@@ -35,6 +35,9 @@ a {
     border-radius: 20px;
     border: none;
 }
+img {
+    max-width: 100%;
+}
 /* utils */
 .container {
     max-width: 1200px;
@@ -145,7 +148,7 @@ header {
     }
     #cmd-accedi {
         background-color: white;
-        font-size: 17px 20px;
+        font-size: 17px;
     }
 }
 /* #endregion Header */
